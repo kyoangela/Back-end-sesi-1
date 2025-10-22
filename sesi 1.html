@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mingyu Cooks</title>
+
+  <style>
+   
+    :root {
+      --primary: #42a5f5;      
+      --secondary: #bbdefb;    
+      --background: #f4f9ff;   
+      --accent: #1e88e5;       
+      --text: #333;
+    }
+
+   
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 25px 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+
+    .title-group h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    
+    .menu-section, .order-section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    
+    .table-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--secondary);
+      color: var(--accent);
+    }
+
+    tr:nth-child(even) {
+      background-color: #e3f2fd;
+    }
+
+    tr:hover {
+      background-color: #bbdefb;
+      transition: 0.3s;
+    }
+
+    
+    .form-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 6px rgba(30,136,229,0.4);
+      outline: none;
+    }
+
+    button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+      box-shadow: 0 4px 10px rgba(21,101,192,0.3);
+    }
+
+    
+    footer {
+      text-align: center;
+      background: var(--accent);
+      color: white;
+      padding: 18px 0;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+      }
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <header>
+    <div class="header-container">
+      <img src="mingyu.jpeg" alt="Logo Mingyu Cooks" class="logo">
+      <div class="title-group">
+        <h1>Mingyu Cooks</h1>
+        <p class="tagline">Fresh Flavor in Every Bite 💙</p>
+      </div>
+    </div>
+  </header>
+
+ 
+  <section class="menu-section">
+    <h2>🍛 Makanan </h2>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Menu</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mingyu's Ramyeon</td>
+            <td>Rp30.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mingyu's tteokbokki</td>
+            <td>Rp28.000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mingyu's Kimbap</td>
+            <td>Rp35.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Section: Minuman -->
+  <section class="menu-section">
+    <h2>🥤 Minuman</h2>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Menu</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Blue Ocean Soda</td>
+            <td>Rp18.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Milkshake Vanilla</td>
+            <td>Rp20.000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Iced Americano</td>
+            <td>Rp15.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Section: Form Pemesanan -->
+  <section class="order-section">
+    <h2>📝 Form Pemesanan</h2>
+    <div class="form-card">
+      <form>
+        <label for="nama">Nama Pelanggan:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="catatan">Catatan Pesanan:</label>
+        <textarea id="catatan" name="catatan" rows="4" placeholder="Tulis catatan pesanan di sini..."></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mingyu Cooks. Crafted with 💙 by Mingyu</p>
+  </footer>
+
+</body>
+</html>
